@@ -1,0 +1,620 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/*Titulo */
+.titulo{
+  background-color:#B9BBF0; 
+  text-decoration: underline;
+  width: 100%;
+  
+}
+.subtitulo{
+  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color:#B9BBF0;
+  width: 100%;
+}
+
+/*fondo index*/
+
+.fondoindex{
+  background-image: url();
+  background-image: url(../images/fondo.jpg);
+}
+
+/*letra body*/
+
+body {
+  background-color: #B9BBF0;
+  font-size: 15px;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav-main{
+  background-color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+  
+ul {
+  list-style: none;
+}
+  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  color: #555;
+  
+}
+
+.nav-main {
+  display: flex;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+  
+.nav-brand {
+  width: 50px;
+}
+  
+.nav-main ul {
+  display: flex;
+}
+  
+.nav-main ul li {
+  padding: 10px;
+}
+  
+.nav-main ul li a {
+  padding: 2px;
+}
+  
+.nav-main ul li a:hover {
+  border-bottom: 2px solid black;
+}
+  
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+  
+hr {
+  margin: 10px 0;
+}
+
+/* buscador*/
+.buscador {
+  float: right; 
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+/* DEPORTES cuadrados, index*/
+
+.card {
+  display: flex;
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  padding: 0 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  gap: 20px;
+} 
+
+.contenedor-deportes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nombres{
+  display: flex;
+  color: grey;
+  font-size: 3em;
+  align-items: center;
+  background-color: beige
+}
+
+/* UBICACIÓN*/
+
+.ubicaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lugar {
+  width: calc(45% - 10px); 
+  margin: 10px; 
+  box-sizing: border-box; 
+}
+
+.lugar iframe {
+  width: 100%; 
+  height: 200px; 
+}
+.titulosucursal {
+  text-align: center;
+  color: black;
+  font-size: 2pc;
+  text-decoration: underline;
+}
+
+
+/* REGISTRATE*/
+
+.formulario {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;  
+}
+
+.formulario .tag-contacto,
+.formulario .tag-mi_cuenta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  margin: 1vh 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="password"] {
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #9295E5;
+  border: none;
+  width: 300px;
+}
+
+.formulario button {
+  padding: 0.8rem 1.8rem;
+  background-color: #9295E5;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 1vh 0;
+  max-width: 150px; 
+}
+
+.formulario .notificaciones {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 1vh 0;
+}
+
+.formulario .notificaciones label {
+  margin-left: 0.5rem; 
+  margin-bottom: 65px;
+}
+
+.formulario input[type="checkbox"] {
+  margin: 0 0.5rem; 
+  text-align: center;
+  margin-bottom: 65px;
+}
+.formulario form fieldset {
+  padding: 1vh 25px;
+}
+
+/*INICIAR SESION*/
+
+.iniciarsesion {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.iniciarsesion .tag-mi_cuenta {
+  margin: 4vh 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iniciarsesion label {
+  text-align: center;
+}
+
+.iniciarsesion input {
+  width: 160%;
+  height: 2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #9295E5;
+  border: none;
+}
+
+.iniciarsesion button {
+  padding: 0.8rem 1.8rem;
+  background-color: #9295E5;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin: 1vh 1vw;
+}
+
+.iniciarsesion button:hover,
+.form-mi_cuenta a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.iniciarsesion form fieldset input {
+  border: none;
+  background-color: #9295E5;
+  height: 2rem;
+  border-radius: 4px;
+  width: 350px;
+}
+
+.iniciarsesion form fieldset {
+  padding: 4vh 25px;
+}
+
+
+/* CONTACTENOS*/
+
+.comentarios {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.comentarios form fieldset {
+  padding: 4vh 0;
+}
+
+.comentarios form fieldset input,
+.comentarios form fieldset select {
+  border: none;
+  background-color: #9295E5;
+  height: 2rem;
+  border-radius: 4px;
+  width: 80%; 
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.comentarios form fieldset label {
+  display: block; 
+}
+
+.comentarios form fieldset textarea {
+  border: none;
+  background-color: #9295E5;
+  border-radius: 4px;
+  width: 65%; 
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.comentarios form fieldset select,
+.comentarios form fieldset textarea {
+  margin: 0.5rem 0; 
+}
+
+.comentarios form fieldset input[type="submit"] {
+  background-color: #9295E5;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0; 
+}
+
+.comentarios form fieldset p {
+  margin: 1rem 0; 
+}
+
+
+/*pagina articulos */
+
+.art2 img {
+  width: 151px; 
+  height: 151px; 
+  margin: 5px;
+
+}
+
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+
+.products-section {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-section h2 {
+  font-size: 3em;
+}
+
+
+.products-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
+.product-card {
+  flex: 0 0 calc(33.33% - 1rem); 
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem; 
+  text-align: center;
+}
+
+.product-data > * {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.product-card img {
+  width: 70%; 
+  max-height: 10rem; 
+  object-fit: cover;
+}
+
+
+.product-card h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.product-card p {
+  margin: 0;
+}
+
+.product-card a {
+  text-decoration: none;
+  background-color: #9295E5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+
+
+
+/* FOOTER*/
+
+.footer {
+  background-color: white;
+  color: white; /* lo puse para que se vean bien los logos de las apps */
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #555;
+  padding: 0.2rem 0.5rem;
+  transition: color 0.3s;
+  display: inline-block; 
+  margin: 0 10px; 
+}
+
+footer a img {
+  width: 2em;
+  height: 2em;
+}
+
+.footer a:active {
+  text-decoration: underline;
+}
+
+.ul-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer nav ul li {
+  display: inline-block;
+  text-decoration: underline;
+
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos para los logos del footer */
+
+.instagram-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+}
+
+.tiktok-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+}
+.twitter-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+}
+.youtube-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+}
+.facebook-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.wpp-logo {
+  display: flex;
+  margin: 0 auto;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+/* los agruegue para que quede bien el footer:*/
+
+.formregistro{
+  margin-bottom: 40px;
+}
+
+.formcomentarios{
+  margin-bottom: 40px;
+}
+
+.iniciarsesion{
+  margin-bottom: 200px;
+}
+
+@media (min-width: 769px){
+
+  
+  .contenedor-deportes{
+    flex-direction: row;
+  }
+  .card{
+    width: 25vw;
+  }
+  .ubicaciones1{
+    flex-direction: row;
+  }
+  
+  .lugar{
+    flex-direction: row;
+  }
+
+  .ul-footer li {
+    margin-bottom: 5px;   
+  }  /* impp lo hize para que quede bien el pie de página*/
+
+
+  /*menu hamburguesa
+  .menu-btn{
+    display: flex;
+    justify-content: right;
+    margin: 3vh 0 0 3vw;
+  }
+  .svg{
+    display: none;
+  }
+
+  .main{
+    padding: 2%;
+  }
+  .main-nav{
+    display: inline-block;
+  }
+ .main-nav ul {
+    gap: 0.5rem;
+    z-index: 0;
+    flex-direction: row;
+    background-color: transparent;
+    position: inherit;
+    width: auto;
+  }
+  .main-nav ul li{
+    border-bottom: 0;
+  }
+
+  .nav, .nav-colecciones {
+   display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 100%;
+    opacity: 0.9;
+    padding: 5vh 2vw;
+    line-height: 2.5;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav.show {
+    transform: translateX(-20px);
+  }
+  .nav-colecciones.show{
+    transform: translateX(-20px);
+  
+  }
+  
+  Lo dejo asi pq no me funciono :(  */
+}
+  
